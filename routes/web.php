@@ -21,6 +21,6 @@ Route::get('/', function () {
 });
 
 Route::get('test', function () {
-	event(new MyEvent('test'));
+	event(new App\Events\NewEvent('hello'));
 	return "Event has been sent!";
 });
